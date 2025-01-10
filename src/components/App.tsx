@@ -1,9 +1,9 @@
-import React from "react";
+import * as React from "react";
 
 const App = () => {
   return (
     <div>
-    <h1>Hello, World!</h1>
+      <h1>Hello, World! :v</h1>
     </div>
   );
 };
