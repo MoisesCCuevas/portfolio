@@ -4,15 +4,17 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: './src/index.tsx',
+  mode: 'development',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: "app.js"
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js'],
+    extensions: ['.ts', '.tsx', '.js', 'json'],
     alias: {
-      '@components': path.resolve(__dirname, 'src/components/'),
-      '@styles': path.resolve(__dirname, 'src/styles/'),
+      '@Components': path.resolve(__dirname, 'src/components/'),
+      '@Pages': path.resolve(__dirname, 'src/pages/'),
+      '@Types': path.resolve(__dirname, 'src/types/'),
     }
   },
   module: {
@@ -29,10 +31,11 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/,
+        test: /\.css$/i,
         use: [
           MiniCssExtractPlugin.loader,
-          'css-loader'
+          'css-loader',
+          'postcss-loader'
         ]
       }
     ]
@@ -40,10 +43,10 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './public/index.html',
-      filename: './index.html'
+      filename: 'index.html'
     }),
     new MiniCssExtractPlugin({
-      filesname: 'styles/[name].css'
+      filename: 'styles/[name].css'
     })
   ],
   devServer: {

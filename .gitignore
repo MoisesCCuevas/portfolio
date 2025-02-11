@@ -3,7 +3,7 @@
 logs
 **/*.backup.*
 **/*.back.*
-.env
+.env*
 dist
 
 node_modules

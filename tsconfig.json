@@ -6,6 +6,13 @@
     "target": "es5",
     "jsx": "react",
     "allowJs": true,
-    "moduleResolution": "Node"
-  }
+    "moduleResolution": "Node",
+    "baseUrl": "./",
+    "paths": {
+      "@Components/*": ["src/components/*"],
+      "@Pages/*": ["src/pages/*"],
+      "@Types/*": ["src/types/*"],
+    }
+  },
+  "include": ["src"]
 }
