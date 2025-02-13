@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { useSelector } from 'react-redux';
-import { RootState } from '../../store/store';
+import { RootState } from '@Store/store';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -9,7 +9,7 @@ interface LayoutProps {
 const Layout = ({ children }: LayoutProps) => {
   const theme = useSelector((state: RootState) => state.ui.theme);
   return (
-    <div className={`flex items-center h-screen w-screen justify-center select-none ${theme}`}>
+    <div className={`flex flex-col items-center justify-center select-none ${theme}`}>
       {children}
     </div>
   );

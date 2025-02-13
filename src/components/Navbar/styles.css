@@ -1,0 +1,9 @@
+.dark nav{
+  background: rgb(8, 51, 68, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.light nav{
+  background: rgb(54, 129, 150, 0.8);
+  backdrop-filter: blur(10px);
+}

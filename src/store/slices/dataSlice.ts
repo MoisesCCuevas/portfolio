@@ -1,9 +1,13 @@
 import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
 import { getData } from '../../api';
 
-interface dataState {
+export interface dataState {
   data: {
     title: string;
+    name: string;
+    photo: string;
+    github: string;
+    linkedin: string;
   } | {};
 }
 

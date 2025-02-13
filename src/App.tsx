@@ -1,9 +1,10 @@
 import * as React from "react";
-import { AppDispatch } from "./store/store";
+import { AppDispatch } from "@Store/store";
 import { useDispatch } from "react-redux";
-import { fetchData } from "./store/slices/dataSlice";
+import { fetchData } from "@Store/slices/dataSlice";
 import Layout from "@Components/Layout";
 import Navbar from "@Components/Navbar";
+import Home from "@Pages/Home";
 import "./styles.css";
 
 const App = () => {
@@ -16,7 +17,7 @@ const App = () => {
   return (
     <Layout>
       <Navbar />
-      <h1>Hello, World! :v</h1>
+      <Home />
     </Layout>
   );
 };

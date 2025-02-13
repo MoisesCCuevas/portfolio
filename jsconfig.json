@@ -13,6 +13,12 @@
       "@Types/*": [
         "./src/types/*"
       ],
+      "@Store/*": [
+        "./src/store/*"
+      ],
+      "@Api/*": [
+        "./src/api/*"
+      ],
     }
   }
 }
