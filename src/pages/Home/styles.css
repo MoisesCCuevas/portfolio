@@ -1,8 +1,23 @@
 .dark #home {
-  background: linear-gradient(124deg, rgba(21, 94, 117, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  background: linear-gradient(124deg, rgba(21, 94, 117, 1), #0a0a0a, rgba(21, 94, 117, 1), #0a0a0a);
+  animation: background-animation 15s ease infinite;
+  background-size: 400% 400%;
 }
 
-
 .light #home {
-  background: linear-gradient(124deg, rgba(255, 255, 255, 1) 0%, rgba(21, 94, 117, 1) 100%);
+  background: linear-gradient(124deg, rgba(54, 129, 150, 1), rgba(255, 255, 255, 1), rgba(54, 129, 150, 1), rgba(255, 255, 255, 1));
+  animation: background-animation 15s ease infinite;
+  background-size: 400% 400%;
+}
+
+@keyframes background-animation {
+  0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }

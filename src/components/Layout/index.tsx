@@ -4,12 +4,13 @@ import { RootState } from '@Store/store';
 
 interface LayoutProps {
   children: React.ReactNode;
+  id?: string;
 }
 
-const Layout = ({ children }: LayoutProps) => {
+const Layout = ({ children, id }: LayoutProps) => {
   const theme = useSelector((state: RootState) => state.ui.theme);
   return (
-    <div className={`flex flex-col items-center justify-center select-none ${theme}`}>
+    <div id={id} className={`flex flex-col md:flex-row items-center h-fit md:h-lvh w-full justify-center p-10 mt-16 relative ${theme}`}>
       {children}
     </div>
   );

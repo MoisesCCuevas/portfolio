@@ -1,0 +1,7 @@
+.dark #projects {
+  background: linear-gradient(180deg, #0a0a0a 0%, rgba(21, 94, 117, 0.6) 15%, rgba(21, 94, 117, 0.6) 75%, #0a0a0a 100%);
+}
+
+.light #projects {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(54, 129, 150, 0.8) 15%, rgba(54, 129, 150, 0.8) 75%, rgba(255, 255, 255, 1) 100%);
+}

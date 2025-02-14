@@ -7,6 +7,8 @@ logs
 dist
 mockData
 
+*.jpg
+
 node_modules
 bower_components
 

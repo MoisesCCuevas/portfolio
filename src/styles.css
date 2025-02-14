@@ -10,6 +10,10 @@
   --textDark: #ededed;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .light {
   background-color: var(--backgroundLight);
   color: var(--textLight);
