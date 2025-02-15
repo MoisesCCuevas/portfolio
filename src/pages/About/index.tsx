@@ -9,7 +9,7 @@ const About = () => {
   const { about, experience } = useSelector((state: RootState) => state.data.data as any);
   return (
     <Layout id="about">
-      <div className="w-full md:w-1/2 flex flex-col flex-1 gap-4 pr-4">
+      <div className="w-full md:w-1/2 flex flex-col gap-4 pr-4">
         <h1 className="font-semibold text-3xl">Sobre mi</h1>
         <p className="font-light text-lg">
           {about}

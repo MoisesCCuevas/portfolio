@@ -1,3 +1,10 @@
+#projects {
+  height: fit-content;
+  flex-direction: column;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
 .dark #projects {
   background: linear-gradient(180deg, #0a0a0a 0%, rgba(21, 94, 117, 0.6) 15%, rgba(21, 94, 117, 0.6) 75%, #0a0a0a 100%);
 }

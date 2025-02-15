@@ -8,6 +8,7 @@ dist
 mockData
 
 *.jpg
+*.png
 
 node_modules
 bower_components
