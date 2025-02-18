@@ -3,6 +3,7 @@
   flex-direction: column;
   padding-top: 8rem;
   padding-bottom: 8rem;
+  gap: 2rem;
 }
 
 .dark #projects {

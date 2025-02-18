@@ -1,4 +1,6 @@
 #skills {
   height: fit-content;
   margin-top: 0;
+  flex-direction: column;
+  gap: 1.5rem;
 }

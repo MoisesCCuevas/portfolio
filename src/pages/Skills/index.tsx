@@ -11,7 +11,8 @@ const Skills = () => {
   const skills = useSelector((state: RootState) => state.skills.data as any);
   return (
     <Layout id="skills">
-      <div className="w-full md:w-2/3 flex shrink flex-col gap-4 relative px-0 py-2 overflow-hidden">\
+      <h1 className="font-semibold text-3xl">Habilidades</h1>
+      <div className="w-full md:w-2/3 flex shrink flex-col gap-4 relative px-0 py-2 overflow-hidden">
         {Object.values(skills).map((skill: skillType[], index:  number) => (
           <ListSkills
             key={index}
