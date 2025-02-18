@@ -37,7 +37,7 @@ const Home = () => {
         </div>
       </div>
       <ProfilePicture
-        url="profile.jpg"
+        url="assets/profile.jpg"
         className="md:size-80 size-40 m-16 md:m-20 flex items-center justify-center static md:absolute bottom-1 right-1 shadow-lg"
       />
     </Layout>

@@ -24,7 +24,7 @@ const Navbar = () => {
     <nav className={`fixed top-0 flex justify-between text-white items-center h-16 w-screen shadow-md z-40 ${theme}`}>
       <div className="pl-8 flex items-center gap-5">
         <ProfilePicture
-          url="profile.jpg"
+          url="assets/profile.jpg"
           className="size-11 flex items-center justify-center"
         />
         <p className="hidden md:flex flex-col">

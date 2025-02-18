@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "@Store/store";
 import { fetchData } from "@Store/slices/dataSlice";
 import { fetchProjects } from "@Store/slices/projectsSlice";
+import { fetchSkills } from "@Store/slices/skillsSlice";
 import Navbar from "@Components/Navbar";
 import NavbarMini from "@Components/NavbarMini";
 import Home from "@Pages/Home";
@@ -21,6 +22,7 @@ const App = () => {
   React.useEffect(() => {
     dispatch(fetchData());
     dispatch(fetchProjects());
+    dispatch(fetchSkills());
   }, []);
 
   return (

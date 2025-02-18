@@ -4,6 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/index.tsx',
@@ -53,6 +54,18 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: 'styles/[name].css'
+    }),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.resolve(__dirname, 'public', 'assets'),
+          to: 'assets'
+        },
+        {
+          from: path.resolve(__dirname, 'public', 'mockData'),
+          to: 'mockData'
+        }
+      ]
     }),
     new CleanWebpackPlugin()
   ],

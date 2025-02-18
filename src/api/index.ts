@@ -11,3 +11,8 @@ export const getProjects = async () => {
   const response = await API.get('/mockData/projectsData.json');
   return response.data;
 };
+
+export const getSkills= async () => {
+  const response = await API.get('/mockData/skillsData.json');
+  return response.data;
+};

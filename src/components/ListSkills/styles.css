@@ -1,0 +1,42 @@
+.inner {
+  display: flex;
+  width: fit-content;
+  animation-name: loop;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.inner:hover {
+  animation-play-state: paused;
+}
+
+.dark .tag {
+  background-color: rgb(8, 51, 68, 0.8);
+}
+
+.light .tag {
+  background-color: rgb(54, 129, 150, 0.8);;
+}
+
+.fade {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+}
+    
+.dark .fade {
+  background: linear-gradient(90deg, #0a0a0a, transparent 30%, transparent 70%, #0a0a0a);
+}
+
+.light .fade {
+  background: linear-gradient(90deg, #ffffff, transparent 30%, transparent 70%, #ffffff);
+}
+
+@keyframes loop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

@@ -25,7 +25,7 @@ ProfilePicture.defaultProps = {
   className: "size-11",
   classNameChildren: "object-cover",
   alt: "Profile Picture",
-  url: "pz_icon.png"
+  url: "assets/pz_icon.png"
 };
 
 export default ProfilePicture;
