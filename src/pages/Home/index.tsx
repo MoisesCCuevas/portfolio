@@ -19,7 +19,7 @@ const Home = () => {
   return (
     <Layout id="home">
       <div className="flex flex-col gap-4 h-full">
-        <h1 className="text-7xl md:text-9xl mt-16 text-amber-400">{title}</h1>
+        <h1 className="text-7xl md:text-9xl mt-16 lightsAnimation">{title}</h1>
         <h3 className="text-4xl md:text-6xl font-medium">{name}</h3>
         <div className="flex flex-col md:flex-row gap-4 md:w-1/2 mt-32">
           <Button onClick={() => window.open(github, "_blank")}>

@@ -13,3 +13,20 @@
 .light #projects {
   background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(54, 129, 150, 0.8) 15%, rgba(54, 129, 150, 0.8) 75%, rgba(255, 255, 255, 1) 100%);
 }
+
+.fade-in {
+  animation: fade-in ease;
+  animation-timeline: view();
+  animation-range: entry 0% entry 100%;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}

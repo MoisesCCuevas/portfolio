@@ -11,7 +11,7 @@ interface itemProjectProps {
 const ItemProject = (props: itemProjectProps) => {
   const { project } = props;
   return (
-    <div className="flex flex-col md:flex-row items-start px-4 py-6 w-full md:w-4/5 relative">
+    <div className="flex flex-col md:flex-row items-start px-4 py-6 w-full md:w-4/5 relative fade-in">
       <figure className="w-full h-48 md:w-1/3 overflow-hidden rounded-md shadow-lg flex mb-4">
         <img src={project.img} alt={project.title} className="object-cover" />
       </figure>

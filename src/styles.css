@@ -23,3 +23,33 @@ html {
   background-color: var(--backgroundDark);
   color: var(--textDark);
 }
+
+.dark .gradient-animation {
+  color: transparent;
+  background: linear-gradient(124deg, rgba(21, 94, 117, 1), rgba(255, 255, 255, 1), rgba(21, 94, 117, 1), rgba(255, 255, 255, 1));
+  background-size: 400% 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: background-animation 15s ease infinite;
+}
+
+.light .gradient-animation {
+  color: transparent;
+  background: linear-gradient(124deg, rgba(54, 129, 150, 1), #0a0a0a, rgba(54, 129, 150, 1), #0a0a0a);
+  background-size: 400% 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: background-animation 15s ease infinite;
+}
+
+@keyframes background-animation {
+  0% {
+  	background-position: 0% 50%;
+  }
+  50% {
+  	background-position: 100% 50%;
+  }
+  100% {
+  	background-position: 0% 50%;
+  }
+}
